@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import Footer from './compnents/Footer';
+import Navbar from './compnents/Navbar';
+import Home from './Pages/Home';
+import { AppStates } from './Store/States';
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
+  const {state}=useContext(AppStates);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <AnimatePresence>{(state>216)?<Navbar/>:""}</AnimatePresence>
+    <Home/>
+    <Footer/>
+    </>
   );
 }
 

@@ -1,0 +1,91 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+#root{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    overflow: hidden;
+}
+body{
+    background-color:#fff !important;
+}
+a{
+    text-decoration: none;
+}
+.footer-headings-div{
+    height: 20vh;
+    align-items: center;
+    background-color: rgba(256,256,256,.05);
+}
+.footer-parent-div{
+    min-height: 95vh;
+    background-color: #22395d;
+    background-attachment: fixed;
+}
+.footer-ul{
+    display: block;
+    margin-top: 20px;
+}
+.footer-ul li{
+    list-style: none;
+    width: 100%;
+}
+.footer-ul li a{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+.footer-icons{
+    border: solid white 2px;
+    transition: 0.5s;
+}
+.footer-icons svg{
+    transition: 0.5s;
+    color: white;
+}
+.footer-icons:hover{
+    background-color: white;
+}
+.footer-icons:hover svg{
+    color:  #22395d;
+}
+.small-screen-buger{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .large-screen-links{
+        display: none;
+    }
+    .small-screen-buger{
+        display: flex;
+    }
+  }
+  .icon-button{
+    background-color: #009cff;
+    transition: 0.5s;
+  }
+  .icon-button:hover{
+    background-color: #00ccff;
+    transition: 0.5s;
+
+  }
+  .icon-button svg{
+    transition: 0.5s;
+  }
+  .icon-button:hover svg{
+    transition: 0.5s;
+    scale: 1.04;
+  }
